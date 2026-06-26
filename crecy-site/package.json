@@ -12,7 +12,9 @@
   "dependencies": {
     "init": "^0.1.2",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "suite": "^0.2.0",
+    "truffle": "^5.11.5"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
