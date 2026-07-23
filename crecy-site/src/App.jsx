@@ -65,7 +65,15 @@ const translations = {
     step3Title: "Asset Minting",
     step3Desc: "Upon successful verification and review, cRECY is minted and distributed according to the protocol’s allocation rules.",
     asset2Footer: "This flow ensures that new supply enters circulation only in connection with verified environmental outcomes.",
-    
+
+    stakingTitle: "Staking & Value Accumulation",
+    stakingSubtitle: "Maximize your long-term position through our non-custodial yield engine.",
+    stakingCard1Title: "22% Target APY",
+    stakingCard1Desc: "15% base yield plus a 7% quarterly milestone bonus for holding. No lock-up periods or exit penalties.",
+    stakingCard2Title: "Real Yield Driven",
+    stakingCard2Desc: "Yield is sustainably funded by B2B corporate circularity certificate sales, constantly compressing the circulating supply.",
+    stakingBtn: "Launch Staking App",
+
     impactTitle: "Verifiable Impact",
     impactP1: "cRECY is backed by cryptographically recorded and audited data from the Recy Network. The system is built to provide transparency regarding the origin of each token through on-chain reporting and the possibility of third-party verification.",
     impactP2: "The protocol includes a dedicated review period after auditor validation, allowing for additional oversight before rewards are distributed.",
@@ -114,6 +122,20 @@ const translations = {
     footCol3Li1: "phil@detrash.io",
     footCol3Li2: "Media Inquiries",
     footCopyright: "© 2026 Detrash",
+
+// Staking Content
+    navStaking: "Staking",
+    btnStakeHeader: "Stake cRECY",
+    stakingTag: "YIELD ENGINE",
+    stakingTitle: "cRECY Staking Protocol",
+    stakingSubtitle: "Maximize your position with our non-custodial, milestone-based staking architecture. Yields are sustained by real-world revenue generated from Corporate Circularity Certificates.",
+    stakePoint1: "Up to 22.0% APY",
+    stakeDesc1: "Earn a 15.0% base APY that accrues every second, plus a 7.0% annualized quarterly bonus (1.75% per 90-day milestone).",
+    stakePoint2: "Non-Custodial & Liquid",
+    stakeDesc2: "Maintain full control of your assets. The base yield has no lock-ups, slashing, or early withdrawal penalties.",
+    stakePoint3: "Real Yield Backing",
+    stakeDesc3: "Corporate purchases of Waste Traceability Certificates are converted to cRECY via market buys, funding the staking treasury.",
+    btnStakeSection: "Launch Staking App",
 
     // Modals Content
     riskTitle: "Risk Considerations",
@@ -180,6 +202,14 @@ const translations = {
     step3Title: "Originação do Ativo",
     step3Desc: "Após verificação e revisão bem-sucedidas, o cRECY é emitido e distribuído de acordo com as regras de alocação do protocolo.",
     asset2Footer: "Este fluxo garante que o novo fornecimento entra em circulação apenas em ligação com resultados ambientais verificados.",
+
+    stakingTitle: "Staking e Acumulação de Valor",
+    stakingSubtitle: "Maximize a sua posição de longo prazo através do nosso motor de rendimento não-custodial.",
+    stakingCard1Title: "22% APY Alvo",
+    stakingCard1Desc: "15% de rendimento base mais 7% de bônus trimestral. Sem períodos de bloqueio rígidos ou taxas de saída.",
+    stakingCard2Title: "Rendimento Real",
+    stakingCard2Desc: "Financiado sustentavelmente pelas vendas B2B de certificados de circularidade, comprimindo constantemente a oferta circulante.",
+    stakingBtn: "Abrir App de Staking",
     
     impactTitle: "Impacto Verificável",
     impactP1: "O cRECY é lastreado por dados registados criptograficamente e auditados da Rede Recy. O sistema foi construído para fornecer transparência sobre a origem de cada token através de relatórios on-chain e da possibilidade de verificação por terceiros.",
@@ -229,6 +259,20 @@ const translations = {
     footCol3Li1: "phil@detrash.io",
     footCol3Li2: "Imprensa",
     footCopyright: "© 2026 Detrash",
+
+     // Staking Content
+    navStaking: "Staking",
+    btnStakeHeader: "Fazer Staking",
+    stakingTag: "MOTOR DE RENDIMENTO",
+    stakingTitle: "Protocolo de Staking cRECY",
+    stakingSubtitle: "Maximize a sua posição com a nossa arquitetura de staking não-custodial baseada em marcos de tempo. Os rendimentos são sustentados por receitas reais geradas pelos Certificados de Circularidade Corporativa.",
+    stakePoint1: "Até 22,0% APY",
+    stakeDesc1: "Ganhe 15,0% de APY base acumulado por segundo, mais um bónus trimestral de 7,0% anualizado (1,75% a cada ciclo de 90 dias).",
+    stakePoint2: "Não-Custodial e Líquido",
+    stakeDesc2: "Mantenha controlo total. O rendimento base não possui bloqueios, penalidades de corte (slashing) ou taxas de saída.",
+    stakePoint3: "Lastro em Rendimento Real",
+    stakeDesc3: "A compra corporativa de Certificados de Rastreabilidade é convertida em cRECY a mercado para financiar a tesouraria de staking.",
+    btnStakeSection: "Acessar App de Staking",
 
     // Modais
     riskTitle: "Considerações de Risco",
@@ -368,6 +412,7 @@ const App = () => {
           <div className="hidden md:flex items-center gap-10 text-[13px] font-semibold tracking-wide uppercase text-slate-300 font-body">
             <a href="#thesis" className="hover:text-white transition-colors">{t.navThesis}</a>
             <a href="#asset" className="hover:text-white transition-colors">{t.navAsset}</a>
+            <a href="#staking" className="hover:text-white transition-colors">Staking</a>
             <a href="#investors" className="hover:text-white transition-colors">{t.navInsights}</a>
           </div>
           <div className="hidden md:flex items-center gap-6 font-body">
@@ -375,6 +420,7 @@ const App = () => {
               {lang === 'en' ? 'PT-BR' : 'EN'}
             </button>
             <a href="https://app.crecy.workers.dev/" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold tracking-wide uppercase hover:text-white transition-colors">{t.login}</a>
+            <a href="https://staking.recy.life/" target="_blank" rel="noopener noreferrer" className="text-[#00A950] hover:text-white text-[13px] font-bold uppercase tracking-wide transition-colors">Staking App</a>
             <a href="mailto:phil@detrash.io" className="bg-white text-black text-[13px] font-bold uppercase tracking-wide py-3 px-8 hover:bg-slate-200 transition-all duration-300 inline-block">{t.contactDesk}</a>
           </div>
           <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -382,15 +428,17 @@ const App = () => {
           </button>
         </div>
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-[#0a0a0a] border-b border-slate-800 p-6 flex flex-col gap-6">
+          <div className="md:hidden absolute top-full left-0 w-full bg-[#0a0a0a] border-b border-slate-800 p-6 flex flex-col gap-6 shadow-2xl">
             <a href="#thesis" onClick={() => setMobileMenuOpen(false)} className="text-xl font-heading font-bold text-white">{t.navThesis}</a>
             <a href="#asset" onClick={() => setMobileMenuOpen(false)} className="text-xl font-heading font-bold text-white">{t.navAsset}</a>
+            <a href="#staking" onClick={() => setMobileMenuOpen(false)} className="text-xl font-heading font-bold text-white">Staking</a>
             <a href="#investors" onClick={() => setMobileMenuOpen(false)} className="text-xl font-heading font-bold text-white">{t.navInsights}</a>
             <div className="h-[1px] w-full bg-slate-800 my-2"></div>
-            <button onClick={() => { toggleLang(); setMobileMenuOpen(false); }} className="text-lg font-heading font-bold text-slate-400 hover:text-white">
+            <button onClick={() => { toggleLang(); setMobileMenuOpen(false); }} className="text-lg font-heading font-bold text-slate-400 hover:text-white text-left">
               {lang === 'en' ? 'Mudar para Português' : 'Switch to English'}
             </button>
-            <a href="https://app.crecy.workers.dev/" target="_blank" rel="noopener noreferrer" className="bg-slate-800 hover:bg-slate-700 transition-colors text-white text-center text-sm font-bold uppercase py-4 px-6 mt-4 w-full block">{t.login}</a>
+            <a href="https://staking.recy.life/" target="_blank" rel="noopener noreferrer" className="bg-[#00A950] hover:bg-[#008f43] transition-colors text-white text-center text-sm font-bold uppercase py-4 px-6 mt-4 w-full block">Staking App</a>
+            <a href="https://app.crecy.workers.dev/" target="_blank" rel="noopener noreferrer" className="bg-slate-800 hover:bg-slate-700 transition-colors text-white text-center text-sm font-bold uppercase py-4 px-6 mt-2 w-full block">{t.login}</a>
             <a href="mailto:phil@detrash.io" className="bg-white text-black text-center text-sm font-bold uppercase py-4 px-6 mt-2 w-full block">{t.contactDesk}</a>
           </div>
         )}
@@ -499,6 +547,39 @@ const App = () => {
                  <p className="text-xl text-[#00A950] font-body font-bold leading-relaxed">{t.impactP2}</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Nova Seção: Staking */}
+      <section id="staking" className="py-32 bg-[#0a0a0a] border-t border-slate-800">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div className="md:w-1/2">
+              <h2 className="text-4xl md:text-5xl font-bold text-white font-heading tracking-tight">{t.stakingTitle}</h2>
+            </div>
+            <div className="md:w-1/2 flex md:justify-end">
+              <p className="text-xl text-slate-400 font-body font-light max-w-md">{t.stakingSubtitle}</p>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-slate-800 mb-12">
+            <div className="bg-[#040D1A] p-12 hover:bg-[#081525] transition-colors duration-300">
+              <div className="text-[#00A950] font-mono text-sm font-bold mb-6">01</div>
+              <h3 className="text-3xl text-white font-bold mb-4 font-heading">{t.stakingCard1Title}</h3>
+              <p className="text-slate-400 leading-relaxed font-body font-light text-lg">{t.stakingCard1Desc}</p>
+            </div>
+            <div className="bg-[#040D1A] p-12 hover:bg-[#081525] transition-colors duration-300">
+              <div className="text-[#00A950] font-mono text-sm font-bold mb-6">02</div>
+              <h3 className="text-3xl text-white font-bold mb-4 font-heading">{t.stakingCard2Title}</h3>
+              <p className="text-slate-400 leading-relaxed font-body font-light text-lg">{t.stakingCard2Desc}</p>
+            </div>
+          </div>
+
+          <div className="flex justify-center md:justify-start">
+            <a href="https://staking.recy.life/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-4 bg-[#00A950] hover:bg-[#008f43] text-white font-bold uppercase tracking-wide py-4 px-8 transition-all duration-300 text-sm font-body">
+              <span>{t.stakingBtn}</span> <ArrowRightIcon />
+            </a>
           </div>
         </div>
       </section>
