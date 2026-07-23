@@ -406,7 +406,7 @@ const App = () => {
             <a href="mailto:phil@detrash.io" className="w-full sm:w-auto flex items-center justify-between gap-6 bg-white hover:bg-slate-200 text-black font-bold uppercase tracking-wide py-4 px-8 transition-all duration-300 text-sm">
               <span>{t.btnProspectus}</span> <ArrowRightIcon />
             </a>
-            <a href="https://drive.proton.me/urls/RFCZCEX6T0#WED3vv4h57yn" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-between gap-6 bg-transparent hover:bg-slate-900 text-white border border-slate-700 font-bold uppercase tracking-wide py-4 px-8 transition-all duration-300 text-sm">
+            <a href="https://wpp.recy.life/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-between gap-6 bg-transparent hover:bg-slate-900 text-white border border-slate-700 font-bold uppercase tracking-wide py-4 px-8 transition-all duration-300 text-sm">
               <span>{t.btnWhitepaper}</span>
             </a>
           </div>
